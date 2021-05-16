@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: url(../images/bg-pattern-top.svg) no-repeat bottom 40vh right 50vw,
+    url(../images/bg-pattern-bottom.svg) no-repeat top 40vh left 50vw;
+  height: 100vh;
+  background-color: hsl(185, 75%, 39%);
+  font-family: "kumbh sans", sans-serif;
+}
+
+/* Main Section  */
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.section {
+  width: 35rem;
+  text-align: center;
+  background: #fff;
+  border-radius: 1.6rem;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card__top {
+  position: relative;
+  width: 100%;
+}
+
+.card__top--bg-img {
+  width: 100%;
+  border-top-left-radius: 1.6rem;
+  border-top-right-radius: 1.6rem;
+}
+
+.card__top--img {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translateX(-50%);
+  border: 0.5rem solid #fff;
+  border-radius: 50%;
+}
+
+.card__main {
+  margin-top: 7rem;
+}
+
+.card__center--name-age {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+
+.card__center--age {
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+
+.card__center--city {
+  font-size: 1.6rem;
+  color: hsl(227, 10%, 46%);
+  margin-top: 1rem;
+}
+
+.card--line {
+  margin: 3rem 0;
+  width: 100%;
+  height: 0.1rem;
+  background-color: hsl(0, 0%, 59%);
+}
+
+.card__bottom {
+  width: 100%;
+}
+.card__bottom--stats-lists {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card__bottom--stats-list span {
+  display: block;
+  margin: 0 0 0.5rem 0;
+}
+
+.card__bottom--stat-number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+
+.card__bottom--stat-name {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  color: hsl(227, 10%, 46%);
+}
+
+.card__bottom--stats-list .card__bottom--stat-name {
+  margin-bottom: 2rem;
+}
+
+/* End of Main Section  */
+
+/* Attribution  */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1.8rem;
+  position: absolute;
+  bottom: 5rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* End of Attribution */
+
+@media (max-width: 375px) {
+  body {
+    padding: 0 2rem;
+  }
+}
